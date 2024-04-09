@@ -57,7 +57,8 @@ public class GiftCardPage2 extends BasePage{
 		}
 		public void button() {
 			
-			clickbutton.click();
+			JavascriptExecutor j=(JavascriptExecutor)driver;
+			j.executeScript("arguments[0].click()",clickbutton);
 			try {
 				Thread.sleep(7000);
 			} catch (InterruptedException e) {
